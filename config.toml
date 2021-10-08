@@ -1,0 +1,7 @@
+baseURL = 'https://limettli.ch/'
+languageCode = 'de-ch'
+title = 'Limettli'
+theme = "lime"
+
+[params]
+  author = "Lisa Menet"

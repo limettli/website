@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Limettli - {{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        {{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.description }}<meta name="description" content="{{ . }}">{{ end }}
+        {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
+
+        <link rel="stylesheet" href="/css/main.css" />
+        <link rel="icon" type="image/png" href="/favicon.ico" />
+    </head>
+    <body>
+
+        <div class="grid">
+            <div class="logo"><img class="logo-image" src="/images/logo_transparent.png" alt="limettli" width="100%"></div>
+            {{ partial "nav.html" . }}
+            <div class="content">
+                {{ block "content" . }}{{ end }}
+            </div>
+            {{ partial "footer.html" . }}
+        </div>
+
+    </body>
+</html>
