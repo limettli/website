@@ -152,7 +152,7 @@ nav {
 }
 
 .content a:link {
-    color: var(--text-color);
+    color: var(--main-color);
 }
 
 .content a:hover {
