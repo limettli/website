@@ -4,5 +4,5 @@ summary: Kurzaermliges Body
 image: yuzu.jpg
 ---
 
-Ein kurzaermliges Body mit einem Ausschnitt wir grosse Koepfe.
+Ein kurzaermliges Body mit einem Ausschnitt fuer grosse Koepfe.
 
