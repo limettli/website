@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@0;1&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital@0;1&display=swap&family=Quicksand:wght@400;700&display=swap');
 
 :root {
     --main-color: rgb(84, 133, 84);
     --text-color: #333;
 
     --grid-gap: 60px;
+    --grid-gap-small: 10px;
 
     --font-size-small: 22px;
     --font-size-regular: 32px;
@@ -24,6 +24,8 @@ html {
     background-attachment: fixed;
     height: 100%;
     min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 body {
@@ -42,15 +44,24 @@ body {
     margin-left: var(--grid-gap);
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 800px) {
     :root {
         --font-size-small: 18px;
         --font-size-regular: 24px;
     }
 
+    .logo-image {
+        max-width: 400px;
+    }
+
     .grid {
-        grid-template-columns: 1fr 780px1fr;
-        grid-template-rows: 90px 30px min-content 90px;
+        grid-gap: var(--grid-gap-small);
+        margin-right: var(--grid-gap-small);
+        margin-top: var(--grid-gap-small);
+        margin-left: var(--grid-gap-small);
+
+        grid-template-columns: 1fr 30fr 1fr;
+        grid-template-rows: 120px 30px min-content 90px;
         grid-template-areas:
             "left logo    right"
             "left nav     right"
@@ -59,7 +70,7 @@ body {
     }
 }
 
-@media only screen and (min-width: 900px) and (max-width: 1600px) {
+@media only screen and (min-width: 800px) and (max-width: 1600px) {
     .grid {
         grid-template-columns: 1fr 300px 8fr 1fr;
         grid-template-rows: 90px min-content 90px;
@@ -131,7 +142,6 @@ nav {
 
 .nav-menu a:active {
     color: var(--text-color);
-    font-style: italic;
 }
 
 .content {
@@ -140,8 +150,7 @@ nav {
 
 .content h1 {
     font-size: var(--font-size-regular);
-    font-style: italic;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .content div {

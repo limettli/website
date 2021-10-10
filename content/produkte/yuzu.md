@@ -1,8 +1,8 @@
 ---
 title: Yuzu
-summary: Kurzaermliges Body
+summary: Kurzärmliges Body
 image: yuzu.jpg
 ---
 
-Ein kurzaermliges Body mit einem Ausschnitt fuer grosse Koepfe. Auch fuer kleine Koepfe geeignet.
+Ein kurzärmliges Body mit einem Ausschnitt für grosse Köpfe. Auch für kleine Köpfe geeignet.
 

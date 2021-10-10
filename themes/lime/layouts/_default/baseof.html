@@ -10,12 +10,12 @@
         {{ with .Site.Params.keywords }}<meta name="keywords" content="{{ . }}">{{ end }}
 
         <link rel="stylesheet" href="/css/main.css" />
-        <link rel="icon" type="image/png" href="/favicon.ico" />
+        <link rel="icon" type="image/png" href="/images/favicon.png" />
     </head>
     <body>
 
         <div class="grid">
-            <div class="logo"><img class="logo-image" src="/images/logo_transparent.png" alt="limettli" width="100%"></div>
+            <div class="logo"><a href="/"><img class="logo-image" src="/images/logo_transparent.png" alt="limettli" width="100%"></a></div>
             {{ partial "nav.html" . }}
             <div class="content">
                 {{ block "content" . }}{{ end }}
